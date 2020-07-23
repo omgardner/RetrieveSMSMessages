@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnRequestPermission"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/prompt"
+        android:text="Request READ_SMS Permission"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnReadSmsInbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnShareFile"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/prompt"
+        android:text="SHARE THE FILE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnReadSmsInbox"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/prompt"
+        android:text="READ SMS DATA"
+        app:layout_constraintBottom_toTopOf="@+id/btnShareFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPermissionStatus"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/prompt"
+        android:text="PLACEHOLDER"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="247dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/prompt"
+        android:text="Have the necessary permissions been granted?"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
